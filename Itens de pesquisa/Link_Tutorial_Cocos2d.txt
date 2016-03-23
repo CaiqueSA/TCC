@@ -1,0 +1,2 @@
+http://www.fabricadejogos.net/posts/tutorial-desenvolvimento-de-jogos-para-android-com-cocos2d-x-parte-1/
+http://www.fabricadejogos.net/posts/tutorial-simulacao-fisica-com-cocos2d-x-parte-2-juntas/
