@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="br.com.unip.garage.view.ScreenBackground"/>
+<fullyQualifiedTypeName name="br.com.unip.garage.config.Elementos"/>
+<fullyQualifiedTypeName name="org.cocos2d.nodes.CCDirector"/>
+<fullyQualifiedTypeName name="org.cocos2d.types.CGPoint"/>
+<fullyQualifiedTypeName name="br.com.unip.garage.config.DispositivoConfig"/>
+<fullyQualifiedTypeName name="org.cocos2d.layers.CCLayer"/>
+<fullyQualifiedTypeName name="org.cocos2d.nodes.CCSprite"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+</qualifiedTypeNameHistroy>

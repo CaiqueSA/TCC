@@ -1,0 +1,33 @@
+package br.com.unip.garage.view;
+
+import static br.com.unip.garage.config.DispositivoConfig.screenHeight;
+import static br.com.unip.garage.config.DispositivoConfig.screenWidth;
+import static br.com.unip.garage.config.DispositivoConfig.screenResolution;
+
+import org.cocos2d.layers.CCLayer;
+import org.cocos2d.layers.CCScene;
+import org.cocos2d.types.CGPoint;
+
+import br.com.unip.garage.config.Elementos;
+import br.com.unip.garage.elementos.ScreenBackground;
+
+public class TitleScreen extends CCLayer {
+
+	private ScreenBackground background;
+	
+	public CCScene scene() {
+		CCScene scene = CCScene.node();
+		scene.addChild(this);
+		return scene;
+	}
+	
+	public TitleScreen() {
+		this.background = new ScreenBackground(Elementos.BACKGROUND_MAIN);
+		 this.background.setPosition(screenResolution(CGPoint.ccp(
+				 screenWidth() / 2.0f,
+				 screenHeight() / 2.0f)));
+
+		this.addChild(this.background);
+	}
+
+}

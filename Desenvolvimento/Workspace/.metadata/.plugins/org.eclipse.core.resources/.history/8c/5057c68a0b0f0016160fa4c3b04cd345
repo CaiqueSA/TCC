@@ -1,0 +1,33 @@
+package br.com.unip.garage.view;
+
+import org.cocos2d.layers.CCLayer;
+import org.cocos2d.layers.CCScene;
+
+import br.com.unip.garage.config.Elementos;
+
+public class TitleScreen extends CCLayer {
+
+	private ScreenBackground background;
+	
+	public CCScene scene() {
+		CCScene scene = CCScene.node();
+		scene.addChild(this);
+		return scene;
+	}
+	
+	public TitleScreen() {
+		
+		// exercicio 2
+		// background
+		// programe o background aqui
+		this.background = new ScreenBackground(Elementos.BACKGROUND_MAIN)accelerometer;
+		
+		// logo
+		// programa o logo aqui
+		
+		// Add options layer
+
+		
+	}
+
+}

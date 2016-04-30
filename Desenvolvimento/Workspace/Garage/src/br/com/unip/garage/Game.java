@@ -1,16 +1,42 @@
 package br.com.unip.garage;
 
+import org.cocos2d.layers.CCScene;
+import org.cocos2d.nodes.CCDirector;
+import org.cocos2d.opengl.CCGLSurfaceView;
+
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Toast;
+import br.com.unip.garage.view.TitleScreen;
 
-public class Game extends Activity {
+public class Game extends Activity implements View.OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_game);
+		// definindo orientação como landscape
+		setRequestedOrientation(
+		ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(
+		WindowManager.LayoutParams.FLAG_FULLSCREEN,
+		WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		// configura a tela
+		CCGLSurfaceView glSurfaceView = new CCGLSurfaceView(this);
+		setContentView(glSurfaceView);
+		CCDirector.sharedDirector().attachInView(glSurfaceView);
+		// configura CCDirector
+		CCDirector.sharedDirector().setScreenSize(320, 480);
+		// abre tela principal
+		CCScene scene = new TitleScreen().scene();
+		CCDirector.sharedDirector().runWithScene(scene);
+
 	}
 
 	@Override
@@ -30,5 +56,11 @@ public class Game extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		Toast.makeText(this, "Pressione para iniciar", Toast.LENGTH_SHORT).show();
 	}
 }
