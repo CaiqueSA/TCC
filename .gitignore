@@ -9,3 +9,6 @@ Desenvolvimento/Workspace/.recommenders
 
 #Ignore thumbnails criado pelo windows
 Thumbs.db
+
+#Ignorar arquivos cache
+*.cache
