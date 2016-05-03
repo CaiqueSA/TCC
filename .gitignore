@@ -1,5 +1,5 @@
 #Ignorar toda a pasta .metadata dentro da workspace
-Desenvolvimento/Workspace/.metadata
+Desenvolvimento/Workspace/.metadata/
 
 #Ignorar toda a pasta .recommenders dentro da workspace
 Desenvolvimento/Workspace/.recommenders
