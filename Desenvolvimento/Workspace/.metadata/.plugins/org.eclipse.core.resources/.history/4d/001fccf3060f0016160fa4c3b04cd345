@@ -1,9 +1,0 @@
-package br.com.unip.garage.view;
-
-import org.cocos2d.layers.CCLayer;
-
-public class TitleScreen extends CCLayer{
-	
-	
-
-}

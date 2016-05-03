@@ -6,3 +6,6 @@ Desenvolvimento/Workspace/.recommenders
 
 #Ignorar todos os arquivos .class
 *.class
+
+#Ignore thumbnails criado pelo windows
+Thumbs.db
