@@ -1,8 +1,0 @@
-package br.com.unip.garage.config;
-
-public class Elementos {
-
-	public static String  BACKGROUND_MAIN = "background_main.png";
-	public static String  GARAGEM = "garagem.png";
-
-}
